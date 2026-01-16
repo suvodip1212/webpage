@@ -6,196 +6,198 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
         <link rel="stylesheet" href="assets/css/main.css" />
         
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168691067-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-168691067-1');
-        </script>
-
         <style>
+            /* Narrowing the header and adjusting fonts */
+            #header { 
+                width: 22em; /* Reduced width for a sleeker sidebar */
+                padding: 4em 3em;
+            }
+            
+            #header h1 { 
+                font-size: 1.85rem; /* Bigger name font */
+                line-height: 1.2;
+                margin-bottom: 0.5em;
+            }
+
+            #header p {
+                font-size: 1.1rem !important; /* Larger sub-text */
+                line-height: 1.5;
+            }
+
+            #main { 
+                margin-left: 22em; /* Matches the new header width */
+            }
+
+            /* Beautifying Navigation Links */
+            nav ul.links {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            nav ul.links li {
+                padding: 0.4em 0;
+            }
+
+            nav ul.links li a {
+                color: rgba(255, 255, 255, 0.5);
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                letter-spacing: 0.15em;
+                font-weight: 600;
+                border-bottom: none;
+                transition: all 0.3s ease;
+            }
+
+            nav ul.links li a:hover {
+                color: #49bf9d !important;
+                padding-left: 5px; /* Subtle slide effect */
+            }
+
             .dark-mode { background-color: #1f1f1f; color: #ffffff; }
             .dark-mode #header { background-color: #111; }
+
             .research-tag { 
                 display: inline-block; 
                 background: #49bf9d; 
                 color: #fff; 
                 padding: 2px 10px; 
                 border-radius: 4px; 
-                font-size: 0.8rem; 
+                font-size: 0.75rem; 
                 margin-bottom: 10px;
+                font-weight: bold;
             }
-            nav ul { list-style: none; padding: 0; }
-            nav ul li { margin: 0.5rem 0; }
-            nav ul li a { border-bottom: none; font-size: 0.9rem; transition: color 0.2s; }
-            nav ul li a:hover { color: #49bf9d !important; }
+
+            /* Responsive fix for smaller screens */
+            @media screen and (max-width: 1280px) {
+                #header { width: 30%; }
+                #main { margin-left: 30%; }
+            }
+            
+            @media screen and (max-width: 980px) {
+                #header { width: 100%; position: relative; margin: 0; }
+                #main { margin-left: 0; }
+            }
         </style>
     </head>
     <body class="is-preload">
 
         <header id="header">
-                <div class="inner">
-                    <a href="#" class="image avatar"><img src="images/Suvodip_2.png" alt="Suvodip Chakraborty" /></a>
-                    <h1><strong>Suvodip Chakraborty</strong></h1>
-                    <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem; line-height: 1.4;">
-                        Postdoctoral Researcher<br />
-                        <strong>ETH Zurich</strong> | FRS<br />
-                        HCI & Eye-Tracking Specialist
-                    </p>
+            <div class="inner">
+                <a href="#" class="image avatar"><img src="images/Suvodip_2.png" alt="Suvodip Chakraborty" /></a>
+                <h1><strong>Suvodip <br />Chakraborty</strong></h1>
+                <p>
+                    Postdoctoral Researcher<br />
+                    <strong>ETH Zurich</strong> | FRS<br />
+                    HCI & Eye-Tracking Researcher
+                </p>
 
-                    <nav id="nav" style="margin: 1.5rem 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
-                        <ul class="links">
-                            <li><a href="#one">About Me</a></li>
-                            <li><a href="#news">News</a></li>
-                            <li><a href="#research">Research Vision</a></li>
-                            <li><a href="#two">Publications</a></li>
-                            <li><a href="#teaching">Mentorship</a></li>
-                            <li><a href="#three">Contact</a></li>
-                        </ul>
-                    </nav>
-                    
-                    <ul class="icons">
-                        <li><a href="https://www.linkedin.com/in/suvodip-chakraborty-3b691813a/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                        <li><a href="https://scholar.google.com/citations?user=T7ciEg8AAAAJ" target="_blank" class="icon brands fa-google"><span class="label">Scholar</span></a></li>
-                        <li><a href="https://github.com/suvodip1212" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                        <li><a href="mailto:suvodip.107019@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                <nav id="nav" style="margin: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
+                    <ul class="links">
+                        <li><a href="#one">About Me</a></li>
+                        <li><a href="#news">Latest News</a></li>
+                        <li><a href="#two">Selected Publications</a></li>
+                        <li><a href="#teaching">Mentorship & Service</a></li>
+                        <li><a href="#three">Contact</a></li>
                     </ul>
+                </nav>
+                
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/suvodip-chakraborty-3b691813a/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://scholar.google.com/citations?user=T7ciEg8AAAAJ" target="_blank" class="icon brands fa-google"><span class="label">Scholar</span></a></li>
+                    <li><a href="https://github.com/suvodip1212" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="mailto:suvodip.107019@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
 
-                    <div style="margin-top: 1.5rem;">
-                        <input type="checkbox" id="dark-theme" name="dark-theme" onclick="document.body.classList.toggle('dark-mode')">
-                        <label for="dark-theme" style="font-size: 0.75rem;">Dark Mode</label>
-                    </div>
+                <div style="margin-top: 1.5rem;">
+                    <input type="checkbox" id="dark-theme" onclick="document.body.classList.toggle('dark-mode')">
+                    <label for="dark-theme" style="font-size: 0.7rem; color: rgba(255,255,255,0.4);">Toggle Dark Mode</label>
                 </div>
-            </header>
+            </div>
+        </header>
 
         <div id="main">
 
-                <section id="one">
-                        <header class="major">
-                            <h2>About Me</h2>
-                        </header>
-                        <p>I am a <strong>Postdoctoral Researcher at ETH Zurich</strong>, affiliated with the Future Resilient Systems (FRS) programme at the Singapore-ETH Centre. My expertise lies at the intersection of <strong>Human-Computer Interaction (HCI)</strong> and <strong>Applied Eye-Tracking</strong>.</p>
-                        
-                        <p>I bridge the gap between physiological signal processing (developed during my MS at <strong>IIT Kharagpur</strong>) and system resilience (the focus of my PhD at <strong>ETH Zurich</strong>). My work aims to create "Cognition-Aware" interfaces that can sense a user's mental state to support critical decision-making in urban and industrial systems.</p>
-                        
-                        <ul class="actions">
-                            <li><a href="https://raw.githubusercontent.com/suvodip1212/webpage/main/files/cv-suvodip%20Chakraborty.pdf" class="button primary icon solid fa-download">Download Full CV</a></li>
-                        </ul>
-                    </section>
+            <section id="one">
+                <header class="major">
+                    <h2>Advancing Cognition-Aware Systems</h2>
+                </header>
+                <p>I am a <strong>Postdoctoral Researcher at ETH Zurich</strong>, affiliated with the Future Resilient Systems (FRS) programme at the Singapore-ETH Centre. My expertise lies at the intersection of <strong>Human-Computer Interaction (HCI)</strong> and <strong>Applied Eye-Tracking</strong>.</p>
+                <p>My work aims to create interfaces that sense a user's mental state via eye-tracking (such as <em>Benign Anisocoria</em> metrics) to support critical decision-making in urban and industrial systems.</p>
+                
+                <ul class="actions">
+                    <li><a href="https://raw.githubusercontent.com/suvodip1212/webpage/main/files/cv-suvodip%20Chakraborty.pdf" class="button primary icon solid fa-download">Download CV</a></li>
+                </ul>
+            </section>
 
-                <section id="news">
-                    <h3>Latest News</h3>
-                    <div class="table-wrapper">
-                        <table class="alt">
-                            <tbody>
-                                <tr><td><strong>Jan 2025</strong></td><td>New paper on <em>Eye-Gaze Sharing</em> accepted in the IJHCI!</td></tr>
-                                <tr><td><strong>Aug 2024</strong></td><td>Presented "Benign Anisocoria" metrics at IEEE HMS.</td></tr>
-                                <tr><td><strong>June 2024</strong></td><td>Started Postdoctoral Fellowship at ETH Zurich / SEC.</td></tr>
-                            </tbody>
-                        </table>
+            <section id="news">
+                <h3>News</h3>
+                <div class="table-wrapper">
+                    <table class="alt">
+                        <tbody>
+                            <tr><td><strong>Jan 2025</strong></td><td>Paper on <em>Eye-Gaze Sharing</em> accepted in the IJHCI.</td></tr>
+                            <tr><td><strong>Aug 2024</strong></td><td>Presented research at IEEE HMS 2024.</td></tr>
+                            <tr><td><strong>June 2024</strong></td><td>Started Postdoc at ETH Zurich / SEC.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="two">
+                <h2>Selected Publications</h2>
+                <div class="row">
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="research-tag">IEEE THMS 2024</span>
+                        <a href="https://ieeexplore.ieee.org/document/10629234" target="_blank" class="image fit thumb"><img src="images/thms.png" alt="Mental Workload" /></a>
+                        <h3>Benign Anisocoria & Load</h3>
+                        <p>Developed eye-tracking metrics to measure cognitive load via pupil asymmetry.</p>
+                    </article>
+                    <article class="col-6 col-12-xsmall work-item">
+                        <span class="research-tag">IJGIS 2024</span>
+                        <a href="https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2348747" target="_blank" class="image fit thumb"><img src="images/BA.jpg" alt="Uncertainty Vis" /></a>
+                        <h3>Uncertainty & Spatial Decisions</h3>
+                        <p>Impact of visualization on cognitive load in safety-critical tasks.</p>
+                    </article>
+                </div>
+                <ul class="actions">
+                    <li><a href="https://scholar.google.com/citations?user=T7ciEg8AAAAJ" class="button">Full Publication List</a></li>
+                </ul>
+            </section>
+
+            <section id="teaching">
+                <h2>Mentorship & Service</h2>
+                <p>I mentor students at ETH Zurich in projects related to wearable sensing and HCI. I serve as a reviewer for <strong>CHI</strong>, <strong>IEEE THMS</strong>, and <strong>IJHCI</strong>.</p>
+            </section>
+
+            <section id="three">
+                <h2>Get In Touch</h2>
+                <div class="row">
+                    <div class="col-8 col-12-small">
+                        <p>Open for collaborations in HCI, physiological sensing, and urban resilience.</p>
                     </div>
-                </section>
-
-                <section id="research">
-                        <header class="major">
-                            <h2>Research Vision</h2>
-                        </header>
-                        <p>My research seeks to advance decision-making support tools toward more robust and uncertainty-aware solutions through field experiments, numerical simulation, and HCI.</p>
-                        
-                        <div class="row">
-                            <div class="col-4 col-12-small">
-                                <h4>Cognitive State Estimation</h4>
-                                <p>Using minute pupil size differences (Anisocoria) and saccadic signatures to quantify mental workload unobtrusively.</p>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <h4>Uncertainty Visualization</h4>
-                                <p>Studying how spatial data visualization impacts the cognitive load of operators in time-critical safety domains.</p>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <h4>System Resilience</h4>
-                                <p>Designing notification frameworks for predicted disruptions in complex cyber-physical urban systems.</p>
-                            </div>
-                        </div>
-                    </section>
-
-                <section id="two">
-                        <h2>Selected Publications</h2>
-                        <div class="row">
-                            <article class="col-6 col-12-xsmall work-item">
-                                <span class="research-tag">IEEE THMS 2024</span>
-                                <a href="https://ieeexplore.ieee.org/document/10629234" target="_blank" class="image fit thumb"><img src="images/thms.png" alt="Mental Workload" /></a>
-                                <h3>Benign Anisocoria & Load</h3>
-                                <p>Developed eye-tracking metrics to measure cognitive load via pupil asymmetry.</p>
-                            </article>
-                            <article class="col-6 col-12-xsmall work-item">
-                                <span class="research-tag">IJGIS 2024</span>
-                                <a href="https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2348747" target="_blank" class="image fit thumb"><img src="images/BA.jpg" alt="Uncertainty Vis" /></a>
-                                <h3>Uncertainty & Spatial Decisions</h3>
-                                <p>Impact of visualization on cognitive load in safety-critical tasks.</p>
-                            </article>
-                            <article class="col-6 col-12-xsmall work-item">
-                                <span class="research-tag">IJHCI 2025</span>
-                                <a href="#" class="image fit thumb"><img src="images/figure_1.jpg" alt="Eye Gaze" /></a>
-                                <h3>Eye-Gaze Sharing</h3>
-                                <p>Exploring collaborative performance through real-time gaze visualization.</p>
-                            </article>
-                            <article class="col-6 col-12-xsmall work-item">
-                                <span class="research-tag">PR Letters</span>
-                                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167865517304075" target="_blank" class="image fit thumb"><img src="images/figure_2.png" alt="EOG Saccades" /></a>
-                                <h3>Saccadic Signatures</h3>
-                                <p>Localizing eye movements in EOG using data-driven dictionaries.</p>
-                            </article>
-                        </div>
-                        <ul class="actions">
-                            <li><a href="https://scholar.google.com/citations?user=T7ciEg8AAAAJ" class="button">Google Scholar Profile</a></li>
+                    <div class="col-4 col-12-small">
+                        <ul class="labeled-icons">
+                            <li><h3 class="icon solid fa-home"><span class="label">Address</span></h3>Singapore-ETH Centre, Singapore</li>
+                            <li><h3 class="icon solid fa-envelope"><span class="label">Email</span></h3><a href="mailto:suvodip.107019@gmail.com">suvodip.107019@gmail.com</a></li>
                         </ul>
-                    </section>
+                    </div>
+                </div>
+            </section>
 
-                <section id="teaching">
-                        <header class="major">
-                            <h2>Mentorship & Service</h2>
-                        </header>
-                        <p>I actively supervise Master’s and Undergraduate students at ETH Zurich, focusing on wearable sensing and HCI. I also serve as a reviewer for flagship venues like <strong>CHI</strong>, <strong>IEEE THMS</strong>, and <strong>IJHCI</strong>.</p>
-                    </section>
-
-                <section id="three">
-                        <h2>Get In Touch</h2>
-                        <div class="row">
-                            <div class="col-8 col-12-small">
-                                <p>I am interested in collaborations regarding cognition-aware interfaces and resilience. Feel free to reach out.</p>
-                            </div>
-                            <div class="col-4 col-12-small">
-                                <ul class="labeled-icons">
-                                    <li>
-                                        <h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-                                        Singapore-ETH Centre, CREATE Tower<br />
-                                        1 Create Way, Singapore 138602
-                                    </li>
-                                    <li>
-                                        <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-                                        <a href="mailto:suvodip.107019@gmail.com">suvodip.107019@gmail.com</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-            </div>
+        </div>
 
         <footer id="footer">
-                <div class="inner">
-                    <ul class="copyright">
-                        <li>&copy; Suvodip Chakraborty</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                    </ul>
-                </div>
-            </footer>
+            <div class="inner">
+                <ul class="copyright">
+                    <li>&copy; Suvodip Chakraborty</li><li>Design based on <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
 
         <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.poptrox.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
-
+        <script src="assets/js/jquery.poptrox.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
