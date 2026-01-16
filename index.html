@@ -1,203 +1,610 @@
 <!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-    <head>
-        <title>Suvodip Chakraborty | ETH Zurich</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        
-        <style>
-            /* Narrowing the header and adjusting fonts */
-            #header { 
-                width: 22em; /* Reduced width for a sleeker sidebar */
-                padding: 4em 3em;
-            }
-            
-            #header h1 { 
-                font-size: 1.85rem; /* Bigger name font */
-                line-height: 1.2;
-                margin-bottom: 0.5em;
-            }
+	<head>
+		<title>Suvodip Chakraborty</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 
-            #header p {
-                font-size: 1.1rem !important; /* Larger sub-text */
-                line-height: 1.5;
-            }
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168691067-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-168691067-1');
+		</script>
 
-            #main { 
-                margin-left: 22em; /* Matches the new header width */
-            }
+	</head>
+	<body class="is-preload">
 
-            /* Beautifying Navigation Links */
-            nav ul.links {
-                list-style: none;
-                padding-left: 0;
-            }
+		<script>
+			function darkTheme() {
+				var element = document.body;
+				element.classList.toggle("dark-mode");
+			}
+			
+			function trackCVDownload() {
+				gtag("event", "cv_download");
+			}
+		</script>
 
-            nav ul.links li {
-                padding: 0.4em 0;
-            }
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar" style="width:25%;">
+						<img src="images/Suvodip_2.png" alt="" />
+					</a>
+					<h1>
+						<strong>Suvodip Chakraborty</strong>
+					</h1>
+					<h1>
+						Ph. D. Researcher, Singapore-ETH Centre, CREATE TOWER, Singapore
+					</h1>
+					<h1>
+						MS Signal Processing, Indian Institute of Technology, Kharagpur, India<br>
+					</h1>
+					<ul class="icons" style="font-size: 1.5rem;">
+						<li><a href="https://www.linkedin.com/in/suvodip-chakraborty-3b691813a/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://scholar.google.com/citations?user=T7ciEg8AAAAJ&hl=en/" target="_blank" class="icon brands fa-google-plus-g"><span class="label">scholar google</span></a></li>
+						<li><a href="https://github.com/suvodip1212" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:suvodip.107019@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-12-small">
+					<input
+					type="checkbox"
+					id="dark-theme"
+					name="dark-theme"
+					onclick="darkTheme()">
+					<label for="dark-theme">Dark theme</label>
+				</div>
+			</header>
 
-            nav ul.links li a {
-                color: rgba(255, 255, 255, 0.5);
-                text-transform: uppercase;
-                font-size: 0.8rem;
-                letter-spacing: 0.15em;
-                font-weight: 600;
-                border-bottom: none;
-                transition: all 0.3s ease;
-            }
+		<!-- Main -->
+			<div id="main">
 
-            nav ul.links li a:hover {
-                color: #49bf9d !important;
-                padding-left: 5px; /* Subtle slide effect */
-            }
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>About me</h2>
+						</header>
+						<p>
+							I am a post-doctoral researcher at ETH Zurich. My doctoral studies , completed at ETH zurich was hosted at
+							the Future Resilient Systems (FRS) programme at the Singapore-ETH Centre, which is part of the Campus for 
+							Research Excellence and Technological Enterprise (CREATE) established by Singapore's National Research Foundation. 
+							My involvement with FRS began in January 2021 after completing my Master's degree at the Indian Institute of
+							Technology Kharagpur, India. My research primarily focuses on the development of visualization, interaction, 
+							and notification frameworks for the communication of predicted disruptions in urban systems. My work is significantly
+							based in the field of Human-Computer Interaction and eye-tracking, where I contribute to enhancing the resilience 
+							of urban systems by improving how disruptions are communicated and understood.
+							
+							I have been aware that to be a student of Human computer interaction (HCI) theoretical study
+							and coursework is one thing, the development of practical abilities is another thing. In addition
+							to this, HCI is more an applied subject than a theoretical one. With this realization, I have
+							made conscious efforts to participate in research projects. I worked alongside a team of researchers
+							developing a multi-modal approach in estimating the cognitive state of an individual using the
+							eye tracking data and other sensor acquired during the experiments. 
+							<a href="https://scholar.google.com/citations?user=T7ciEg8AAAAJ&hl=en/" target="_blank">
+								@Google scholar
+							</a>.
+							
+				<blockquote>My research seeks to advance decision making support tools
+				toward more robust and uncertainty-aware solutions through the
+				intersection of field experiments, numerical simulation, and
+				human-computer interaction with applications in resilience.</blockquote>
 
-            .dark-mode { background-color: #1f1f1f; color: #ffffff; }
-            .dark-mode #header { background-color: #111; }
+				<!-- <section class="action", style="text-align: center;">
+					<a href="#current" class="button">Current Work</a>
+					<a href="#past" class="button">Published Work</a>
+					<a href="#software" class="button">Software</a>
+					<a href="#collaborations" class="button">Collaborations</a>
+				</section>
 
-            .research-tag { 
-                display: inline-block; 
-                background: #49bf9d; 
-                color: #fff; 
-                padding: 2px 10px; 
-                border-radius: 4px; 
-                font-size: 0.75rem; 
-                margin-bottom: 10px;
-                font-weight: bold;
-            }
+				<section class="action", style="text-align: center;">
+					<a href="#data" class="button">Published Data</a>
+					<a href="#consult" class="button">Technical Reports</a>
+					<a href="#courses" class="button">Open Access Courses Material</a>
+				</section>-->			
+					</section>
+							You can check out my recent work below 😉
+							
+						</p>
+						<!-- <p>Passionate about leveraging data and programming to solve business problems. BSc Physics Imperial College London. Experience with: Python (pandas, numpy, selenium, requests, beautiful soup); VBA; data manipulation, cleaning, analysis, visualisation; web scraping.</p> -->
+						<!-- <ul class="icons" style="font-size: 1.5rem">
+							<li><a href="https://www.linkedin.com/in/emile-gill/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://medium.com/@emilegill743" target="_blank" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+							<li><a href="https://github.com/emilegill743" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="mailto:emilegill743@hotmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul> -->
+						<ul class="actions">
+							<!-- <li><a href="#" class="button primary">Learn More</a></li> -->
+							<li>
+								<a
+								href="https://raw.githubusercontent.com/suvodip1212/webpage/main/files/cv-suvodip%20Chakraborty.pdf"
+								download="cv-suvodip%20Chakraborty"
+								class="button primary icon solid fa-download"
+								onclick="trackCVDownload()">
+								Download CV</a></li>
+						</ul>
+					</section>
 
-            /* Responsive fix for smaller screens */
-            @media screen and (max-width: 1280px) {
-                #header { width: 30%; }
-                #main { margin-left: 30%; }
-            }
-            
-            @media screen and (max-width: 980px) {
-                #header { width: 100%; position: relative; margin: 0; }
-                #main { margin-left: 0; }
-            }
-        </style>
-    </head>
-    <body class="is-preload">
+				<!-- Two -->
+					<section id="current">
+						<h2>Recent Work</h2>
+						<div class="row">
+							
+						<article class="col-6 col-12-xsmall work-item">
+															<a 
+								href="https://ieeexplore.ieee.org/document/10629234"
+								class="image fit thumb"
+								target="_blank">
+									<img src="images/thms.png"
+									alt="Photo by nrd on Unsplash" />
+								</a>
+								<a 
+								href="https://ieeexplore.ieee.org/document/10629234"
+								target="_blank">
+								Estimating Perceived Mental Workload From Eye-Tracking Data Based on Benign Anisocoria
+								</a>
+								<p style="text-align:justify">Did you know your left and right pupil sizes are not the same? In a recently accepted article, we introduce two new eye-tracking metrics -- based on the minute differences between left and right pupil diameter -- that can accurately measure cognitive load. By analyzing pupil size asymmetry between the left and right eye, we've developed an effective method for assessing mental workload. Our research shows promising results in a case study using an N-back test.</p>
+							</article>
 
-        <header id="header">
-            <div class="inner">
-                <a href="#" class="image avatar"><img src="images/Suvodip_2.png" alt="Suvodip Chakraborty" /></a>
-                <h1><strong>Suvodip <br />Chakraborty</strong></h1>
-                <p>
-                    Postdoctoral Researcher<br />
-                    <strong>ETH Zurich</strong> | FRS<br />
-                    HCI & Eye-Tracking Researcher
-                </p>
+															
+								<article class="col-6 col-12-xsmall work-item">
+								<a 
+								href="https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2348747"
+								class="image fit thumb"
+								target="_blank">
+									<img src="images/BA.jpg"
+									alt="Photo by nrd on Unsplash" />
+								</a>
+								<a 
+								href="https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2348747"
+								target="_blank">The influence of uncertainty visualization on cognitive load in a safety- and time-critical decision-making task
+									</a>
+									<p style="text-align:justify">
+								**Making spatial decisions under pressure? New research reveals how visualization techniques can significantly reduce cognitive load. **Traffic controllers and other professionals working in safety-critical domains constantly face spatial decision situations under high pressure. But what if there was a simple way to improve their decision-making abilities? This new study at Singapore-ETH Centre explores the impact of different visualization techniques on cognitive load in time-critical tasks using eye tracking. The study also examines the differences in scanning patterns resulting from different decision-making strategies through gaze transition entropy. The results are sure to surprise you! P.S. Want to know which visualization technique reigns supreme? Read the full article here Influence of uncertainty visualization on cognitive load in a safety-critical, time-critical decision-making task </p>
+								</article>	
+															
+							<article class="col-6 col-12-xsmall work-item">
+								<a 
+								href="https://www.sciencedirect.com/science/article/abs/pii/S0167865517304075"
+								class="image fit thumb"
+								target="_blank">
+									<img src="images/figure_1.jpg"
+									alt="Photo by nrd on Unsplash" />
+								</a>
+								<a 
+								href="https://www.sciencedirect.com/science/article/abs/pii/S0167865517304075"
+								target="_blank">
+								Localization of eye saccadic signatures in electrooculograms using sparse representations with data driven dictionaries
+								</a>
+								<p style="text-align:justify">In this paper, we propose two methods for localizing saccadic eye movement signatures from Electrooculograms (EOG). The first approach uses a sparse representation of data-driven dictionaries of saccadic movements. In this approach, we match the EOG subsequence with the dictionary element using distance metrics to identify the saccades. The second approach is to compare a saccadic signature template with the EOG subsequence using Dynamic Time Warping (DTW). We find that the proposed methods have advantages over one another in context specific applications. The first method is significantly faster with considerable accuracy, while the second approach is more accurate.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a 
+								href="https://ieeexplore.ieee.org/abstract/document/8487864"
+								class="image fit thumb"
+								target="_blank">
+									<img src="images/figure_3.png"
+									alt="Photo by nrd on Unsplash" />
+								</a>
+								<a 
+								href="https://ieeexplore.ieee.org/abstract/document/8487864"
+								target="_blank">
+								Modeling and Analysis of Electrodes for Electrooculography
+								</a>
+								
+								<p style="text-align:justify"> Selection of suitable electrodes for practical applications in electrooculography (EOG) is an open research problem. The present paper compares electrodes made of various materials (Copper, gold, silver and Ag-Ag-Cl) in terms of SNR, shape and surface area and employs statistical analysis to address the issue of choice of electrodes. A low-cost dry electrode assembly for EOG has also been proposed. The preliminary findings suggest that the proposed set of electrodes improve the quality of EOG recordings and are thus suitable for a wide range of EOG studies and BCI applications. Besides, the design of the electrodes has been tested on a number of subjects and found to ensure a more comfortable fit compared to the conventional electrodes and may hence be suitable for use over a long period of time.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a 
+								href="https://ieeexplore.ieee.org/abstract/document/8589865"
+								class="image fit thumb"
+								target="_blank">
+									<img src="images/figure_2.png"
+									alt="Photo by nrd on Unsplash" />
+								</a>
+								<a 
+								href="https://ieeexplore.ieee.org/abstract/document/8589865"
+								target="_blank">
+								Active Sensors for the Acquisition of Physiological Signals
+								</a>
+								<p style="text-align:justify">The acquisition of physiological signals from human subjects has been an important research area for quite some time. Common issues involved in standard schemes for acquisition and processing of physiological signals, such as the possibility of the electrodes being easily damaged, or the probability of irritation upon prolonged usage, necessitate the development of active sensors for the acquisition of physiological signals. The present paper proposes the use of gold-plated copper electrodes with active compensation to obtain electroencephalogram (EEG), electrooculogram (EOG), and electrocardiogram (ECG) signals. The quality of the signal obtained has been compared with those obtained with standard sensors. The paper has two significant contributions: the proposal of sensors with active compensation, and preparation of a composite database.</p>
+							</article>
+						</div>
+						<!-- <ul class="actions">
+							<li><a href="#" class="button primary">Full Portfolio</a></li>
+						</ul> -->
+					</section>
+	
 
-                <nav id="nav" style="margin: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem;">
-                    <ul class="links">
-                        <li><a href="#one">About Me</a></li>
-                        <li><a href="#news">Latest News</a></li>
-                        <li><a href="#two">Selected Publications</a></li>
-                        <li><a href="#teaching">Mentorship & Service</a></li>
-                        <li><a href="#three">Contact</a></li>
-                    </ul>
-                </nav>
-                
-                <ul class="icons">
-                    <li><a href="https://www.linkedin.com/in/suvodip-chakraborty-3b691813a/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="https://scholar.google.com/citations?user=T7ciEg8AAAAJ" target="_blank" class="icon brands fa-google"><span class="label">Scholar</span></a></li>
-                    <li><a href="https://github.com/suvodip1212" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                    <li><a href="mailto:suvodip.107019@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
+				<!-- Three
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="#">
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+								</form>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										1234 Somewhere Rd.<br />
+										Nashville, TN 00000<br />
+										United States
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										000-000-0000
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="#">hello@untitled.tld</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section> -->
 
-                <div style="margin-top: 1.5rem;">
-                    <input type="checkbox" id="dark-theme" onclick="document.body.classList.toggle('dark-mode')">
-                    <label for="dark-theme" style="font-size: 0.7rem; color: rgba(255,255,255,0.4);">Toggle Dark Mode</label>
-                </div>
-            </div>
-        </header>
+				<!-- Four -->
+				
+					<!-- <section id="four">
+						<h2>Elements</h2>
 
-        <div id="main">
+						<section>
+							<h4>Text</h4>
+							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+							<hr />
+							<header>
+								<h4>Heading with a Subtitle</h4>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<header>
+								<h5>Heading with a Subtitle</h5>
+								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+							</header>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+							<hr />
+							<h2>Heading Level 2</h2>
+							<h3>Heading Level 3</h3>
+							<h4>Heading Level 4</h4>
+							<h5>Heading Level 5</h5>
+							<h6>Heading Level 6</h6>
+							<hr />
+							<h5>Blockquote</h5>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+							<h5>Preformatted</h5>
+							<pre><code>i = 0;
 
-            <section id="one">
-                <header class="major">
-                    <h2>Advancing Cognition-Aware Systems</h2>
-                </header>
-                <p>I am a <strong>Postdoctoral Researcher at ETH Zurich</strong>, affiliated with the Future Resilient Systems (FRS) programme at the Singapore-ETH Centre. My expertise lies at the intersection of <strong>Human-Computer Interaction (HCI)</strong> and <strong>Applied Eye-Tracking</strong>.</p>
-                <p>My work aims to create interfaces that sense a user's mental state via eye-tracking (such as <em>Benign Anisocoria</em> metrics) to support critical decision-making in urban and industrial systems.</p>
-                
-                <ul class="actions">
-                    <li><a href="https://raw.githubusercontent.com/suvodip1212/webpage/main/files/cv-suvodip%20Chakraborty.pdf" class="button primary icon solid fa-download">Download CV</a></li>
-                </ul>
-            </section>
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
 
-            <section id="news">
-                <h3>News</h3>
-                <div class="table-wrapper">
-                    <table class="alt">
-                        <tbody>
-                            <tr><td><strong>Jan 2025</strong></td><td>Paper on <em>Eye-Gaze Sharing</em> accepted in the IJHCI.</td></tr>
-                            <tr><td><strong>Aug 2024</strong></td><td>Presented research at IEEE HMS 2024.</td></tr>
-                            <tr><td><strong>June 2024</strong></td><td>Started Postdoc at ETH Zurich / SEC.</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+						</section>
 
-            <section id="two">
-                <h2>Selected Publications</h2>
-                <div class="row">
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="research-tag">IEEE THMS 2024</span>
-                        <a href="https://ieeexplore.ieee.org/document/10629234" target="_blank" class="image fit thumb"><img src="images/thms.png" alt="Mental Workload" /></a>
-                        <h3>Benign Anisocoria & Load</h3>
-                        <p>Developed eye-tracking metrics to measure cognitive load via pupil asymmetry.</p>
-                    </article>
-                    <article class="col-6 col-12-xsmall work-item">
-                        <span class="research-tag">IJGIS 2024</span>
-                        <a href="https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2348747" target="_blank" class="image fit thumb"><img src="images/BA.jpg" alt="Uncertainty Vis" /></a>
-                        <h3>Uncertainty & Spatial Decisions</h3>
-                        <p>Impact of visualization on cognitive load in safety-critical tasks.</p>
-                    </article>
-                </div>
-                <ul class="actions">
-                    <li><a href="https://scholar.google.com/citations?user=T7ciEg8AAAAJ" class="button">Full Publication List</a></li>
-                </ul>
-            </section>
+						<section>
+							<h4>Lists</h4>
+							<div class="row">
+								<div class="col-6 col-12-xsmall">
+									<h5>Unordered</h5>
+									<ul>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+									<h5>Alternate</h5>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Sagittis adipiscing lorem eleifend.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<h5>Ordered</h5>
+									<ol>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+										<li>Dolor pulvinar etiam magna etiam.</li>
+										<li>Etiam vel felis at lorem sed viverra.</li>
+										<li>Felis enim feugiat dolore viverra.</li>
+									</ol>
+									<h5>Icons</h5>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+									</ul>
+								</div>
+							</div>
+							<h5>Actions</h5>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Default</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions small">
+								<li><a href="#" class="button primary small">Small</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<div class="row">
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small">Small</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary fit">Default</a></li>
+										<li><a href="#" class="button fit">Default</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-12-small">
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary small fit">Small</a></li>
+										<li><a href="#" class="button small fit">Small</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 
-            <section id="teaching">
-                <h2>Mentorship & Service</h2>
-                <p>I mentor students at ETH Zurich in projects related to wearable sensing and HCI. I serve as a reviewer for <strong>CHI</strong>, <strong>IEEE THMS</strong>, and <strong>IJHCI</strong>.</p>
-            </section>
+						<section>
+							<h4>Table</h4>
+							<h5>Default</h5>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
 
-            <section id="three">
-                <h2>Get In Touch</h2>
-                <div class="row">
-                    <div class="col-8 col-12-small">
-                        <p>Open for collaborations in HCI, physiological sensing, and urban resilience.</p>
-                    </div>
-                    <div class="col-4 col-12-small">
-                        <ul class="labeled-icons">
-                            <li><h3 class="icon solid fa-home"><span class="label">Address</span></h3>Singapore-ETH Centre, Singapore</li>
-                            <li><h3 class="icon solid fa-envelope"><span class="label">Email</span></h3><a href="mailto:suvodip.107019@gmail.com">suvodip.107019@gmail.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
+							<h5>Alternate</h5>
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Item One</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Two</td>
+											<td>Vis ac commodo adipiscing arcu aliquet.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>29.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
 
-        </div>
+						<section>
+							<h4>Buttons</h4>
+							<ul class="actions">
+								<li><a href="#" class="button primary">Primary</a></li>
+								<li><a href="#" class="button">Default</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button large">Large</a></li>
+								<li><a href="#" class="button">Default</a></li>
+								<li><a href="#" class="button small">Small</a></li>
+							</ul>
+							<ul class="actions fit">
+								<li><a href="#" class="button primary fit">Fit</a></li>
+								<li><a href="#" class="button fit">Fit</a></li>
+							</ul>
+							<ul class="actions fit small">
+								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+								<li><a href="#" class="button fit small">Fit + Small</a></li>
+							</ul>
+							<ul class="actions">
+								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+							</ul>
+							<ul class="actions">
+								<li><span class="button primary disabled">Primary</span></li>
+								<li><span class="button disabled">Default</span></li>
+							</ul>
+						</section>
 
-        <footer id="footer">
-            <div class="inner">
-                <ul class="copyright">
-                    <li>&copy; Suvodip Chakraborty</li><li>Design based on <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </footer>
+						<section>
+							<h4>Form</h4>
+							<form method="post" action="#">
+								<div class="row gtr-uniform gtr-50">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+										<label for="demo-priority-low">Low Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-normal" name="demo-priority">
+										<label for="demo-priority-normal">Normal Priority</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-high" name="demo-priority">
+										<label for="demo-priority-high">High Priority</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-copy" name="demo-copy">
+										<label for="demo-copy">Email me a copy of this message</label>
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="checkbox" id="demo-human" name="demo-human" checked>
+										<label for="demo-human">I am a human and not a robot</label>
+									</div>
+									<div class="col-12">
+										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.poptrox.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+						<section>
+							<h4>Image</h4>
+							<h5>Fit</h5>
+							<div class="box alt">
+								<div class="row gtr-50 gtr-uniform">
+									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
+									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
+								</div>
+							</div>
+							<h5>Left &amp; Right</h5>
+							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						</section>
+
+					</section>
+
+
+			</div> -->
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<!-- <ul class="icons">
+						<li><a href="https://www.linkedin.com/in/emile-gill/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://medium.com/@emilegill743" target="_blank" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+						<li><a href="https://github.com/emilegill743" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:emilegill743@hotmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul> -->
+					<ul class="copyright">
+						<li>&copy; suvodip </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer> 
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
